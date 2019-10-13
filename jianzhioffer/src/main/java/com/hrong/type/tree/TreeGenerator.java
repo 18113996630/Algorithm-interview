@@ -7,6 +7,12 @@ import java.util.Arrays;
  * @Description
  **/
 public class TreeGenerator {
+
+	public static TreeNode generateTree(){
+		int[] pre = {1, 2, 4, 7, 3, 5, 6, 8};
+		int[] in = {4, 7, 2, 1, 5, 3, 8, 6};
+		return reConstructBinaryTree(pre, in);
+	}
 	public static TreeNode reConstructBinaryTree(int[] pre, int[] in) {
 		//递归的终点
 		if (in.length == 0) {

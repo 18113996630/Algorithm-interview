@@ -1,7 +1,5 @@
 package com.hrong.type.tree;
 
-import com.hrong.chapter.p1_10.P4;
-
 /**
  * @Author hrong
  * @Description
