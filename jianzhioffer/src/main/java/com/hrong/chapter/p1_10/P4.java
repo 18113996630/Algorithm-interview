@@ -28,7 +28,7 @@ public class P4 {
 		System.out.println(result);
 	}
 
-	public TreeNode reConstructBinaryTree(int[] pre, int[] in) {
+	private TreeNode reConstructBinaryTree(int[] pre, int[] in) {
 		//递归的终点
 		if (in.length == 0) {
 			return null;

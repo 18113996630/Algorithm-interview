@@ -21,11 +21,11 @@ public class P5 {
 	 * 借助第二个栈，可以将第一个栈中的元素依次弹出并存入第二个栈
 	 * 所以原本在第一个栈中是先进后出的顺序，经过处理变成了先进先出的顺序
 	 */
-	public void push(int node) {
+	private void push(int node) {
 		stack1.push(node);
 	}
 
-	public int pop() {
+	private int pop() {
 		if (stack2.size() == 0) {
 			while (stack1.size() != 0) {
 				stack2.push(stack1.pop());

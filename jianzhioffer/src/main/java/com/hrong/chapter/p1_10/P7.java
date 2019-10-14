@@ -13,7 +13,7 @@ public class P7 {
 	 * 所以自然联想到使用递归来进行求解
 	 * 递归的终点是当n等于0或者1
 	 */
-	public int Fibonacci(int n) {
+	private int Fibonacci(int n) {
 		//递归终点
 		if (n == 0 || n == 1) {
 			return n;

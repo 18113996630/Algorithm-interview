@@ -31,7 +31,7 @@ public class P1 {
 	 * 整个二维数组可以看做一个矩阵，可以以左下角为起点开始比较，
 	 * 若目标值大于起点值，则将x值加1；否则将y减1
 	 */
-	public boolean Find(int target, int[][] array) {
+	private boolean Find(int target, int[][] array) {
 		int x = 0;
 		int y = array.length - 1;
 		while (x < array[0].length && y >= 0) {

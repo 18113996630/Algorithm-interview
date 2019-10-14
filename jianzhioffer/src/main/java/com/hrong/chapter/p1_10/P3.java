@@ -19,7 +19,7 @@ public class P3 {
 	/**
 	 * 常规解法：顺序遍历ListNode，将数据存入list中，再将list倒序
 	 */
-	public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
+	private ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
 		if (listNode == null) {
 			return new ArrayList<>();
 		}
@@ -44,7 +44,7 @@ public class P3 {
 	 * 这里可以找到循环的终点：当链表不为空，则可以使用递归完成
 	 */
 	private ArrayList<Integer> result = new ArrayList<>();
-	public ArrayList<Integer> printListFromTailToHead2(ListNode listNode) {
+	private ArrayList<Integer> printListFromTailToHead2(ListNode listNode) {
 		if (listNode != null) {
 			printListFromTailToHead2(listNode.next);
 			result.add(listNode.val);

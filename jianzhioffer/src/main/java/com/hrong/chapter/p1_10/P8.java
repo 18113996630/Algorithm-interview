@@ -11,7 +11,7 @@ public class P8 {
 	 * 终点只能由n-1或者n-2跳上去，一直可以推到n<=3
 	 * n=3时有三种跳法，n=2时有两种跳法，n=1时有一种跳法
 	 */
-	public int JumpFloor(int target) {
+	private int JumpFloor(int target) {
 		if (target <= 3) {
 			return target;
 		}

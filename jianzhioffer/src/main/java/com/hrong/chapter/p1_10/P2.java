@@ -12,7 +12,7 @@ public class P2 {
 		System.out.println(result);
 	}
 
-	public String replaceSpace(StringBuffer str) {
+	private String replaceSpace(StringBuffer str) {
 		return str.toString().replaceAll(" ", "%20");
 	}
 }
