@@ -20,9 +20,7 @@ public class LruArray {
 	private int count;
 
 	public LruArray() {
-		this.capacity = DEFAULT_CAPACITY;
-		this.dataArray = new Object[capacity];
-		this.count = 0;
+		this(0);
 	}
 
 	public LruArray(int capacity) {

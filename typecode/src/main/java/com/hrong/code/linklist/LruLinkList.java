@@ -34,9 +34,7 @@ public class LruLinkList<T> {
 	}
 
 	public LruLinkList() {
-		this.length = 0;
-		this.head = new Node<>();
-		this.capacity = DEFAULT_CAPACITY;
+		this(0);
 	}
 
 	public void add(T element) {
